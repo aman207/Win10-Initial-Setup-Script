@@ -1,0 +1,116 @@
+##########
+# Win 10 / Server 2016 / Server 2019 Initial Setup Script - Default preset
+# Author: Disassembler <disassembler@dasm.cz>
+# Version: v3.9, 2020-04-02
+# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+##########
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Privacy Tweaks ###
+DisableTelemetry                # EnableTelemetry
+DisableWiFiSense                # EnableWiFiSense
+DisableAppSuggestions           # EnableAppSuggestions
+DisableActivityHistory          # EnableActivityHistory
+DisableBackgroundApps           # EnableBackgroundApps
+DisableLocation                 # EnableLocation
+#DisableLocationTracking         # EnableLocationTracking
+DisableMapUpdates               # EnableMapUpdates
+#DisableFeedback                 # EnableFeedback
+DisableTailoredExperiences      # EnableTailoredExperiences
+DisableAdvertisingID            # EnableAdvertisingID
+DisableWebLangList              # EnableWebLangList
+DisableCortana                  # EnableCortana
+DisableErrorReporting           # EnableErrorReporting
+DisableDiagTrack                # EnableDiagTrack
+DisableWAPPush                  # EnableWAPPush
+
+### Security Tweaks ###
+#DisableAdminShares              # EnableAdminShares
+SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
+#HideAccountProtectionWarn       # ShowAccountProtectionWarn
+EnableDotNetStrongCrypto        # DisableDotNetStrongCrypto
+EnableF8BootMenu                # DisableF8BootMenu
+#SetDEPOptOut                    # SetDEPOptIn
+
+### Network Tweaks ###
+SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
+DisableRemoteAssistance         # EnableRemoteAssistance
+
+### Service Tweaks ###
+EnableUpdateMSProducts          # DisableUpdateMSProducts
+DisableUpdateRestart            # EnableUpdateRestart
+DisableMaintenanceWakeUp        # EnableMaintenanceWakeUp
+DisableAutoplay                 # EnableAutoplay
+DisableAutorun                  # EnableAutorun
+EnableNTFSLongPaths             # DisableNTFSLongPaths
+SetBIOSTimeUTC                # SetBIOSTimeLocal
+DisableFastStartup            # EnableFastStartup
+
+### UI Tweaks ###
+#DisableActionCenter             # EnableActionCenter
+#DisableLockScreen               # EnableLockScreen
+HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
+#HideShutdownFromLockScreen      # ShowShutdownOnLockScreen
+#DisableAeroShake              # EnableAeroShake
+DisableStickyKeys               # EnableStickyKeys
+ShowTaskManagerDetails          # HideTaskManagerDetails
+ShowFileOperationsDetails       # HideFileOperationsDetails
+HideTaskbarSearch               # ShowTaskbarSearchIcon         
+HideTaskView                    # ShowTaskView
+#ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
+#SetTaskbarCombineWhenFull       # SetTaskbarCombineNever        
+HideTaskbarPeopleIcon           # ShowTaskbarPeopleIcon
+ShowSecondsInTaskbar          # HideSecondsFromTaskbar
+#HideTrayIcons                   # ShowTrayIcons
+DisableSearchAppInStore         # EnableSearchAppInStore
+#DisableNewAppPrompt             # EnableNewAppPrompt
+DisableShortcutInName           # EnableShortcutInName
+#SetVisualFXPerformance          # SetVisualFXAppearance
+SetVisualFXAppearance
+EnableTitleBarColor           # DisableTitleBarColor
+DisableEnhPointerPrecision    # EnableEnhPointerPrecision
+EnableNumlock                 # DisableNumlock
+# EnableVerboseStatus           # DisableVerboseStatus
+DisableF1HelpKey                # EnableF1HelpKey
+
+### Explorer UI Tweaks ###
+ShowKnownExtensions             # HideKnownExtensions
+ShowHiddenFiles                 # HideHiddenFiles
+ShowEncCompFilesColor         # HideEncCompFilesColor
+EnableRestoreFldrWindows      # DisableRestoreFldrWindows
+HideSyncNotifications           # ShowSyncNotifications
+HideRecentShortcuts             # ShowRecentShortcuts
+SetExplorerThisPC               # SetExplorerQuickAccess
+HideDownloadsFromThisPC         # ShowDownloadsInThisPC
+Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
+Hide3DObjectsFromExplorer     # Show3DObjectsInExplorer
+DisableThumbnailCache           # EnableThumbnailCache
+DisableThumbsDBOnNetwork        # EnableThumbsDBOnNetwork
+
+### Application Tweaks ###
+#DisableOneDrive                 # EnableOneDrive
+#UninstallOneDrive               # InstallOneDrive
+UninstallMsftBloat              # InstallMsftBloat
+UninstallThirdPartyBloat        # InstallThirdPartyBloat
+#DisableXboxFeatures             # EnableXboxFeatures
+#DisableAdobeFlash               # EnableAdobeFlash
+DisableEdgePreload              # EnableEdgePreload
+DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
+DisableIEFirstRun               # EnableIEFirstRun
+DisableFirstLogonAnimation      # EnableFirstLogonAnimation
+DisableMediaSharing             # EnableMediaSharing
+InstallLinuxSubsystem         # UninstallLinuxSubsystem
+SetPhotoViewerAssociation       # UnsetPhotoViewerAssociation
+AddPhotoViewerOpenWith          # RemovePhotoViewerOpenWith
+UninstallXPSPrinter             # InstallXPSPrinter
+RemoveFaxPrinter                # AddFaxPrinter
+
+### Unpinning ###
+# UnpinStartMenuTiles
+# UnpinTaskbarIcons
+
+### Auxiliary Functions ###
+WaitForKey
+Restart

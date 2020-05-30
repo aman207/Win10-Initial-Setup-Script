@@ -20,7 +20,7 @@ DisableBackgroundApps           # EnableBackgroundApps
 DisableLocation                 # EnableLocation
 #DisableLocationTracking         # EnableLocationTracking
 DisableMapUpdates               # EnableMapUpdates
-DisableFeedback                 # EnableFeedback
+#DisableFeedback                 # EnableFeedback
 DisableTailoredExperiences      # EnableTailoredExperiences
 DisableAdvertisingID            # EnableAdvertisingID
 DisableWebLangList              # EnableWebLangList
