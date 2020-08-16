@@ -14,7 +14,7 @@ DisableWiFiSense                # EnableWiFiSense
 DisableAppSuggestions           # EnableAppSuggestions
 DisableActivityHistory          # EnableActivityHistory
 DisableBackgroundApps           # EnableBackgroundApps
-DisableLocation                 # EnableLocation
+#DisableLocation                 # EnableLocation
 #DisableLocationTracking         # EnableLocationTracking
 DisableMapUpdates               # EnableMapUpdates
 #DisableFeedback                 # EnableFeedback
@@ -58,7 +58,7 @@ DisableStickyKeys               # EnableStickyKeys
 ShowTaskManagerDetails          # HideTaskManagerDetails
 ShowFileOperationsDetails       # HideFileOperationsDetails
 HideTaskbarSearch               # ShowTaskbarSearchIcon         
-HideTaskView                    # ShowTaskView
+#HideTaskView                    # ShowTaskView
 #ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
 #SetTaskbarCombineWhenFull       # SetTaskbarCombineNever        
 HideTaskbarPeopleIcon           # ShowTaskbarPeopleIcon
